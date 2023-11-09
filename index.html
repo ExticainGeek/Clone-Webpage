@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="Passport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style id="sti">
+    
+    
+        /* Add keyframes for animation */
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Style the container and images */
+        .image-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .moving-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: moveRight 5s linear infinite; /* Adjust duration as needed */
+        }
+
+        /* Additional styles for multiple images */
+        .moving-image:nth-child(2) {
+            animation-delay: 2s; /* Delay for second image */
+        }
+
+        .moving-image:nth-child(3) {
+            animation-delay: 3s; /* Delay for third image */
+        }
+        
+        
+        /* Add more .moving-image:nth-child rules for additional images */
+    </style>
+    <style id="sty">
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+    
+        
+        }
+        </style>
+        <style>
+            
+            
+            .navbar {
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            .navbar a {
+              float: left;
+              font-size: 16px;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+            
+            .dropdown .dropbtn {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color: white;
+              padding: 0%;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+            
+            
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color:rgb(32, 110, 174);
+              min-width: 145px;
+              min-height: 30px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              border: 1px solid white;
+            }
+            
+            .dropdown-content a {
+              float: none;
+              color: white;
+              padding: 0%;
+              text-decoration: none;
+              display: block;
+              text-align: center;
+              margin-right: 0%;
+              height: 30px;
+              border: 1px solid white;
+            }
+            
+            .dropdown-content a:hover {
+              background-color:black
+            }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+
+          <style>
+            * {box-sizing: border-box}
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            .navbar {
+              width: 100%;
+              height: 100%;
+              background-color:rgb(32, 110, 174);
+              overflow:hidden;
+            }
+            .navbar a {
+                float: left;
+                padding: 12px;
+                margin: 0%;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                width: 20%; /* Four links of equal widths */
+                text-align: center;
+              }
+            
+            
+            
+            .navbar a:hover {
+              background-color: #000;
+            }
+            
+            .navbar a.active {
+              background-color:rgb(32, 110, 174);
+            }
+            
+            
+            
+            </style>
+            
+            <style id =nota>
+              table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+              
+              td, th {
+                border: 1px solid white;
+                text-align: left;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color:#dddddd;
+              }
+              </style>
+            
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+            
+</head>
+<body>
+    <header>
+        <div id="head">
+            
+            <a>Saturday, October 14,2023|12.18 PM </a>
+            <a>Skip to main content |</a>
+            <a>Screen reader access |</a>
+            <a>Sidemap |</a>
+            <a>Home |</a>
+            <a lang="hi">-A A +A हिन्दी</a>
+         </div>
+
+         <div id="logo">
+            <div id="a">
+            </div>
+            <div id="b">
+            <p>
+             <h2>Passport Seva</h2>
+            PSP Division
+            <br>
+            Ministry of External Affairs,Government of India
+            </p>
+            </div>
+            <div id="c">
+            </div>
+         </div>
+         <div id="bar">
+            <button id="pubg" Value="Home" style="background-color: rgb(16, 15, 15); color: white; height: 30px; width: 3cm ;">Home</button>
+            <button Value="About Us" style="background-color: rgb(32, 110, 174); color: white; height: 30px; width: 3cm;">About Us</button>
+            <div class="dropdown">
+            <button id="pan" class="dropbtn" Value="Passprt Office" style=" background-color: rgb(32, 110, 174); color: white;height: 30px; width: 3.5cm; font-size: small;">Passport Office <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                <a lang="hi">काय</a>
+                <a href="hi"> पायतं </a>
+                <a href="hi">भोसडीच्या </a>
+                </div>
+            </div>
+            <button Value="RTI" style=" background-color: rgb(32, 110, 174); color: white;height: 30px;  width: 2.5cm;" >RTI</button>
+            <button Value="Citizen Charter" style= "background-color: rgb(32, 110, 174); color: white;height: 30px;  width: 3cm;">Citizen Charter</button>
+            <button Value="Contact Us" style=" background-color: rgb(32, 110, 174); color: white;height: 30px;  width: 3cm;">Contact Us</button>
+            <button Value="Whats New" style=" background-color: rgb(32, 110, 174); color: white;height: 30px; width: 3.2cm;">Whats New</button>
+            <input type="search" placeholder="Search" style="height: 30px; width: 3.5cm;">
+            <button type="submit" style="background-color: black;"><i class="fa fa-search" style="height: 18px; color: white; "></i></button>
+        </div>
+    </header>
+    <content>
+        <div id="bulletin">
+            <marquee direction="left"
+             behavior="access"
+             style="border:BLACK 2px SOLID ;height: 30px; width: 990px; background-color: rgb(215, 213, 213);" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam maiores culpa. Quae deleniti, aperiam quaerat ad commodi fugiat praesentium eveniet voluptate vitae impedit porro itaque ipsa a amet velit.
+            </marquee>
+        </div>
+        <div id="one">
+        
+        <div id="menu">
+                <button id="New_user" >New User Registration</button>
+                <button id="Exist_user">Existing User Registration</button>
+                <button id="Appointment">Check Appointment Availability</button>
+                <button id="Track">Track application status</button>
+        </div>
+        
+        <div id="slides">
+            <div class="image-container">
+                    <img class="moving-image" src="sc1.png" alt="Image1">
+                    <img class="moving-image" src="sc2.png" alt="Image2">
+                    <img class="moving-image" src="sc3.png" alt="Image3">
+                    
+            </div>
+        </div>
+        </div>
+    </content>  
+
+    <content id="cont">
+        <div id="page">
+            <div id="zo" style="font-size: larger; text-align: left; color: rgb(55, 138, 239); height: 30px; width: 325px;">
+                <p>National Call Center</p>
+            </div>
+            <div id="lo" style="font-size: x-large; text-align: center; color: rgb(55, 138, 239); height: 30px; width: 325px; background-color: rgb(179, 178, 178); display: flex; flex-direction: row;" >
+                <text style="text-align: center; background-color:white; color: black;">&#9742</text>
+                <p style="text-align: center;">1800-9876-1234</p>
+            </div>
+            <div id="ho" style="font-size: larger; text-align: left; color: rgb(55, 138, 239); height: 30px; width: 325px;" >
+                <p>Passport Office Page</p>
+            </div>
+            <div id="do" style=" height: 30px; width: 325px; background-color: rgb(179, 178, 178);" >
+                <select name="Post Office" required style="text-align: center; height: 20px; width: 250px; margin-top: 5px;">
+                    <option value="" disabled selected hidden>--------------------Passport Office-----------------</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nagpur">Mumbai</option>
+                    <option value="Nagpur">Pune</option>
+                    <option value="Nagpur">Chatrapati Sambhajinagar</option>
+                    <option value="Nagpur">New Delhi</option>
+                    <option value="Nagpur">Bengaluru</option>
+                    <option value="Nagpur">Hyderabad</option>
+                    <option value="Nagpur">Chennai</option>
+
+                </select>
+            </div>
+            <div id="mo" style="font-size: larger; text-align: left; color: rgb(55, 138, 239); height: 30px; width: 250px">
+                <p>Mission/Post Office</p>
+            </div>
+            <div id="ko" style=" height: 30px; width: 325px; background-color: rgb(179, 178, 178);" >
+                <select placeholder="Post Office" style="text-align: center; height: 20px; width: 250px; margin-top: 5px;">
+                    <option value="" disabled selected hidden>-----------------Region/State----------------</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Rajasthan">Rajasthan</option>
+
+                </select>
+            </div>
+            <div id="so" style="font-size: larger; text-align: left; color: rgb(55, 138, 239); height: 30px; width: 325px;" >
+                <p>Login for Official User</p>
+            </div>
+            <div id="vo" style=" height: 30px; width: 325px; background-color: rgb(179, 178, 178);" >
+                <select placeholder="Post Office" style="text-align: center; height: 20px; width: 250px; margin-top: 5px;">
+                    <option value="" disabled selected hidden>-------------------Official User---------------</option>
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Ghar">Ghar</option>
+                    <option value="Ja">Ja</option>
+                    <option value="Beta">Beta</option>
+                </select>
+
+                
+             </div>
+        </div>
+
+        <div id="apply">
+            <div id="chi">
+                <p style="font-size: larger; color: rgb(55, 138, 239); height: 30px;">Before You apply</p>
+            </div>
+            <div id="man">
+                <button value="info" style="background-color: black; color: white; height: 37px;"><bold>Information Center</bold></button>
+                <button value="form" style="background-color:rgb(32, 110, 174) ; color: white; height: 37px; width: 155px;"><bold>Forms and Affidevits</bold></button>
+                <button value="docs" style="background-color: rgb(32, 110, 174); color: white; height: 37px; width: 170px;">Document Advisor</button>
+                <button value="feedback" style="background-color: rgb(32, 110, 174); color: white; height: 37px; width: 190px;">Feedback and GrevienceS</button>
+            </div>
+        
+            <div>
+            <table id="customers">
+            <tr>
+                <td><a href="https://www.wikipedia.org/" target="_blank">Getting Started </a></td>
+                <td><a href="https://www.wikipedia.org/" target="_blank">Taatkal Report</a> </td>
+              </tr>
+              <tr>
+                <td><a href="https://www.wikipedia.org/" >Passport Act and Rules</a></td>
+                <td><a href="https://www.wikipedia.org/" >Know Your Police Station  <text style="color: red; font-size: smaller;"><SUP>new!</SUP></text></a></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.wikipedia.org/">Getting Started</a></td>
+                <td><a href="https://www.wikipedia.org/">Public Advisory</a></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.wikipedia.org/" >Safety Guidelines</a></td>
+                <td><a href="https://www.wikipedia.org/" >Standards and Protocols</a></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.wikipedia.org/" >Fee Calculator</a></td>
+                <td><a href="https://www.wikipedia.org/" >Caution Notice</a></td>
+              </tr>
+              
+              
+            </table>
+             </div>
+        </div>
+
+    </content>
+    <content id="extra">
+        <div id="scroll">
+          <div id="scroller">
+            <text><p style="font-size: large; padding-top: 8px; color: rgb(55, 138, 239);">Notice & Updates</p></text>
+            <div class="wrapper">
+              <div class="tabs">
+                <div class="tab">
+                  <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                  <label for="tab-1" class="tab-label">News</label>
+                  <div class="tab-content"><ul style="font-size: smaller; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                    <li>Vacancy Circular for the post of DPO in Central Passport Organisation on deputation basis<sup style="color: red; font-weight: 500;">New!</sup> </li>
+                    <br>
+                    <li>Protest/Strike notice given by All India Passport Staff Association, Patna</li>
+                    <br>
+                    <li>Circular regarding Advertisement of e-tender for courier services for dispatch of passports/OCI cards to Mission/Posts abroad<sup style="color: red;font-weight: 500;">New!</sup></li>
+                    <br>
+                    <li>SSC Notice for LDC grade LDCE 2018 from OA to JPA</li>
+                    <br>
+                    <li>Transfer Policy Guidelines 2021 for Central Passport Organization (CPO) employees  </li>
+                    <br>
+                    <li>Circular regarding Advertisement of e-tender for courier services for dispatch of passports/OCI cards to Mission/Posts abroad</li>
+                    <br>
+                    <li>SSC Notice for LDC grade LDCE 2018 from OA to JPA</li>
+                    <br>
+                    <li>Transfer Policy Guidelines 2021 for Central Passport Organization (CPO) employees  </li>
+                    <li>Circular regarding Advertisement of e-tender for courier services for dispatch of passports/OCI cards to Mission/Posts abroad</li>
+                    <br>
+                    <li>SSC Notice for LDC grade LDCE 2018 from OA to JPA</li>
+                    <br>
+                    <li>Transfer Policy Guidelines 2021 for Central Passport Organization (CPO) employees<sup style="color: red;font-weight: 500;">New!</sup>   </li>
+                    <br>
+                    <li>Circular regarding Advertisement of e-tender for courier services for dispatch of passports/OCI cards to Mission/Posts abroad</li>
+                    <br>
+                    <li>SSC Notice for LDC grade LDCE 2018 from OA to JPA</li>
+                    <br>
+                    <li>Transfer Policy Guidelines 2021 for Central Passport Organization (CPO) employees  </li>
+                    
+                  </ul>  
+                   </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                  <label for="tab-2" class="tab-label">Circular</label>
+                  <div class="tab-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt natus, similique atque repellendus alias velit culpa, harum magnam, fuga necessitatibus assumenda inventore! Eveniet dicta accusantium temporibus corporis accusamus similique?
+                  Architecto velit minima doloremque accusamus qui culpa ratione recusandae possimus voluptates. A atque laboriosam ipsa eius sed maxime eligendi eveniet quisquam ullam repudiandae officia totam incidunt et, adipisci beatae doloremque.
+                  Ipsum velit dignissimos illum cum deleniti sint doloribus officiis illo ex, sapiente placeat ipsa fugit reiciendis iure eveniet! Nulla ex, maiores a voluptatem quam rerum amet aut eveniet nemo doloremque!
+                  Mollitia quidem ullam illum cumque dolorem possimus ducimus sed necessitatibus praesentium, libero esse accusamus exercitationem sunt! Illo esse unde asperiores dolores non adipisci dolore repellendus, ullam, veritatis temporibus deserunt consectetur.
+                  A unde consectetur vero officiis minus, iste odio harum debitis fugiat, officia eveniet voluptatibus libero consequatur accusantium commodi dolorem ipsam quod aperiam in! Quos praesentium facilis beatae, illo doloremque veniam. to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                  <label for="tab-3" class="tab-label">Tab Three</label>
+                  <div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</div>
+                </div>
+              </div>
+              <p>Example line outside of tab box</p>
+            </div>
+          </div>
+
+          <div id="news">
+            <text> <p style="font-size: large; color: rgb(55, 138, 239); padding-top: 8px;">Steps To apply</p></text>
+              <div id="service">
+                <table id="neu" style="border: 1px solid grey; ">
+                  <tr  style="background-color:  rgb(18, 17, 28); color: white;"><th >Online Services</th></tr>
+                  <tr class="bo"><td style="text-decoration: none;"> 
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Indian_Passport.svg/640px-Indian_Passport.svg.png" width=25px height=25px style="border-radius: 50%;" >
+                     <a href="https://youtu.be/MfjHYgfaeoY?si=9KvhaVCCgKdMG943" style="text-decoration: none;"> Ordinary Passport</a></td></tr>
+                  
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Indian_Diplomatic_Passport.svg/1442px-Indian_Diplomatic_Passport.svg.png" width=25px height=25px style="border-radius: 50%;"> 
+                  <a href= "https://youtu.be/IqzDZvYjROE?si=ghfUqB31ZCxuM6xc" style="text-decoration: none;"> Diplomatic/ Official Passport</a></td>
+                  </tr>
+
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Maharashtra_Police_Insignia_%28India%29.svg/2560px-Maharashtra_Police_Insignia_%28India%29.svg.png" width=25px height=25px style="border-radius: 50%;">Police Clearance Certificate</td></tr>
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Indian_Passport.svg/640px-Indian_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">Identity Cerificate</td></tr>
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Indian_Diplomatic_Passport.svg/1442px-Indian_Diplomatic_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">Surrender Certificate</td></tr>
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Indian_Passport.svg/640px-Indian_Passport.svg.png" width=25px height=25px style="border-radius: 50%;"> Background Verfication</td></tr>
+                  <tr class="bo"><td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Indian_Diplomatic_Passport.svg/1442px-Indian_Diplomatic_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">LoC Permit </td></tr>
+
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Indian_Passport.svg/640px-Indian_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">HRM & Training</td></tr>
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Indian_Diplomatic_Passport.svg/1442px-Indian_Diplomatic_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">Passport India E-Book</td></tr>
+                  <tr class="bo"><td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Indian_Passport.svg/640px-Indian_Passport.svg.png" width=25px height=25px style="border-radius: 50%;">Passport Seva Video</td></tr>
+                  
+                </table>
+
+              </div>
+          </div>
+
+          <div id="notice">
+            <p style="font-size: large; color:  rgb(55, 138, 239); padding-top: 8px;">Value added services</p>
+            <div style="padding: 8px;">
+              <table style="border: 2px solid grey;">
+                <tr class="bo"><td><sub><img src="https://static.vecteezy.com/system/resources/previews/014/441/091/original/mobile-phone-icon-design-in-blue-circle-png.png" height= 20px width=20px> </sub> m-passport seva App <sub><img src="https://cdn.icon-icons.com/icons2/2235/PNG/512/android_os_logo_icon_134673.png" height= 25px width=25px> </sub>
+                  <sub><img src="https://w7.pngwing.com/pngs/27/996/png-transparent-apple-logo-apple-logo-white-heart-logo-thumbnail.png" height= 25px width=20px> </sub>
+                </td></tr>
+                <tr class="bo"><td> <sub><img src="https://static-00.iconduck.com/assets.00/police-icon-2048x2048-smdcn5w6.png" height= 20px width=20px> </sub>m-passport police App 
+                  <sub><img src="https://cdn.icon-icons.com/icons2/2235/PNG/512/android_os_logo_icon_134673.png" height= 25px width=25px> </sub>
+                  <sub><img src="https://w7.pngwing.com/pngs/27/996/png-transparent-apple-logo-apple-logo-white-heart-logo-thumbnail.png" height= 25px width=20px> </sub></td></tr>
+              </table>
+
+            </div>
+              <div style="padding-top: 8px;">
+                <p style="font-size: large; color:rgb(55, 138, 239) ;">Case Studies</p>
+                  <div style="padding: 8px;">
+                  <table style="border: 2px solid grey;">
+                    <tr class="bo"><td><sub><img src="Logo.jpg" height=20px width=20px></sub> Jewels of digital</td></tr>
+                    <tr class="bo"><td><sub><img src="Logo.jpg" height=20px width=20px></sub>Go safe & Go better</td></tr>
+                    <tr class="bo"><td><sub><img src="Logo.jpg" height=20px width=20px></sub>Advisory of Indians going abroad</td></tr>
+                    <tr class="bo"><td><sub><img src="Logo.jpg" height=20px width=20px></sub>Overseas Citizen of India</td></tr>
+                  </table>
+                </div>
+                
+              </div>
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Azadi-Ka-Amrit-Mahotsav-Logo.png" width=300px height=250px>
+              </div>
+          </div>
+        </div>
+
+    </content>
+
+    <footer>
+        <div id="faq">
+          <div id="faqs" class="navbar">
+            <a href="#">FAQ</a> 
+            <a href="#">External Links</a> 
+            <a href="#">Legal Information</a> 
+            <a href="#">Contact Us</a>
+            <a href="#">Terms & Condition</a>
+          </div>
+          
+
+          </div>
+        </div>
+
+        <div id="lane" style="background-color: white;">
+            <table id="tab" style="border-color: white;">
+                <t style="border-color: white;">
+                  <td><a href="#">Ministry of External Affairs</a></td>
+                  <td><a href="#">Madad</a></td>
+                  <td><a href="#">Privacy Policy</a></td>
+            
+                  
+                  
+                </tr>
+                <tr style="background-color: white;">
+                  <td><a href="#">National Portal of India</a></td>
+                  <td><a href="#">India Code Portal</a></td>
+                  <td><a href="#">Copyright Policy</a></td>
+                  <td>
+                    <a href= "https://youtu.be/Y0SUz-J-2pU?si=Yk0Ba707eAmKhcgd">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" width=30> 
+                    </a>
+                    <a href= "https://twitter.com/?lang=en">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" width=30 height=20> 
+                    </a>
+                    <a href= "https://www.youtube.com/@anujghom3839/videos">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"  width=30 height=20 target="_blank"> 
+                    </a>
+                  </td> 
+                  
+                  
+                </tr>
+                <tr>
+                  <td><a href="#">Visa on arrival</a></td>
+                  <td><a href="#">Beauro of Immegration</a></td>
+                  <td><a href="#">Visa Policy</a></td>
+                  
+                  
+                </tr>
+                <tr style="background-color: white;">
+                  <td><a href="#">NCW Women Helplin</a></td>
+                  <td><a href="#">Foriegner Division</a></td>
+                  
+                  
+                </tr>
+                <tr>
+                  <td><a href="#">eMigrate</a></td>
+                  <td><a href="#">Consular Services</a></td>
+                  
+                  
+                </tr>
+                <tr style="background-color: white; border-color: white;">
+                  <td><a href="#">Hyperlink Policy</a></td>
+          
+                  
+                  
+                </tr>
+                <tr>
+                  <td><a href="#">Indian Embessy List</a></td> 
+                </tr>
+                
+            </table>
+        </div>
+        <div class="copy">
+          <text>&#169 Ministry of Justice League, Gorment of Wakanda</text>
+
+        </div>
+        <div class="copy">
+          <text>Site maintained by Sukhiyar Homie</text>
+
+        </div>
+        <div class="copy">
+          <text>Last Updated 16/10/2023</text>
+
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>
